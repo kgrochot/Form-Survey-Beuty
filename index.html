@@ -1,0 +1,236 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!doctype html>
+<title>Verschönern und Verwöhnen</title>
+<link href="https://fonts.googleapis.com/css?family=Unkempt" rel="stylesheet">
+
+<form id="survey-form">
+  <h1 id="title">Verschönern und Verwöhnen</h1>
+  <p id="description">Lass Dich verwöhnen und entspannen durch Massage & spezielle Körpertherapien</p>
+  <img src=""
+ 
+  <fieldset>
+  <legend for="massage" >Personal Info</legend>
+  <label for="vorname">Vorname</label>
+  <input type="text" name="vorname" id="vorname" value="vorname">
+  <label for="name" id="name-label">Nachname</label>
+  <input type="text" name="name" id="name" placeholder="Nachname" value="name"required>
+  <label for="email" id="email-label">Email</label>
+  <input type="email" name="email" id="email" placeholder="email@yahoo.com" value="email" required>
+  <label for="mobil" id="number-label">Mobil</label>
+  <input type="number" name="mobil" id="number" value="mobil" placeholder="+49154123432" required pattern="[-+]?[0-9]" min="3" max="22" required>
+  </fieldset>
+ 
+  <legend for="massage">Welchen Druck bevorzugen Sie?</legend>
+  <select id="dropdown" name="druckTyp">
+    <option value="">--Wähle eine option--</option>
+    <option value="streichen">Das Streichen (mit beiden Händen Richtung Herz)</option>
+    <option value="kneten">Das Kneten (S-förmige Knetbewegungen)</option>
+    <option value="reiben">Das Reiben (mit den Handballen)</option>
+    <option value="klopfen">Das Klopfen (leichtes Schlagen mit lockerer Hand)</option>
+    <option value="erschüttern">Das Erschüttern (mit den Fingerkuppen oder der Handfläche)</option>
+  </select>
+     
+  <fieldset id="massage-art">
+  <legend>Warum möchten Sie eine Massage in Anspruch nehmen?</legend>
+  <label for="arzt"><input type="radio" id="entspannung" name="warum_massage" value="arzt"> ärztliche Empfehlung</label> 
+  <label for="schmerzen"><input type="radio" id="schmerzen" name="warum_massage" value="schmerzen"> Schmerzen durch Arbeit oder Sport</label>
+  <label for="entspannung"><input type="radio" id="entspannung" name="warum_massage" value="entspannung"> zur Entspannung</label>
+  <label for="sonstiges"><input type="radio" id="sonstiges" name="warum_massage" value="sonstiges" > Sonstiges
+  <input type="text" placeholder="z.b ausprobieren, geschenk"></input></label> 
+  </fieldset>
+
+<fieldset id="gesundheit">
+  <legend>Fragen zum Gesundheit</legend>
+  
+  <label>Welche Schmerzen haben Sie?</label>
+  
+   <li>
+    <input type="checkbox" name="schultern" id="Schultern" value="schultern">
+    <label for="Schultern">Schultern</label>
+
+    <ul>
+      <li>
+        <input type="radio" name="schultern" value="kalkschulter" id="radio-1" checked>
+        <label for="kalkschulter">Kalkschulter</label>
+      </li>
+      <li>
+        <input type="radio" name="schultern"  value="schultersteife" id="radio-2">
+        <label for="schultersteife">Schultersteife</label>
+      </li>
+      <li>
+        <input type="radio" name="schultern" value="arthrose" id="radio-3">
+        <label for="arthrose">Arthrose der Schultergelenke</label>
+      </li>
+      <li>
+        <input type="radio" name="schultern" value="faszial" id="radio-4">
+        <label for="faszial">Muskulär-fasziale Überspannungen</label>
+      </li>
+    </ul>
+  </li>
+  
+   <li>
+    <input type="checkbox" name="nacken" id="nacken" value="nacken">
+    <label for="nacken">Nacken</label>
+
+    <ul>
+      <li>
+        <input type="radio" name="nacken" value="kalkschulter" id="radio-1" checked>
+        <label for="kalkschulter">Verspannung</label>
+      </li>
+      <li>
+        <input type="radio" name="nacken"  value="steifhals" id="radio-2">
+        <label for="radio-2">Steifhals</label>
+      </li>
+      <li>
+        <input type="radio" name="nacken" value="arthrose" id="radio-3">
+        <label for="arthrose">HWS-Syndrom</label>
+      </li>
+      <li>
+        <input type="radio" name="nacken" value="seitlich" id="radio-4">
+        <label for="seitlich">Seitliche schmerzen </label>
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <input type="checkbox" name="rucken" id="rucken" value="rucken">
+    <label for="nacken">Rücken</label>
+
+    <ul>
+      <li>
+        <input type="radio" name="rucken" value="verspannung" id="radio-1" checked>
+        <label for="verspannung">Verspannung</label>
+      </li>
+      <li>
+        <input type="radio" name="rucken"  value="untere" id="radio-2">
+        <label for="untere">Untere Rücken</label>
+      </li>
+      <li>
+        <input type="radio" name="rucken" value="obere" id="radio-3">
+        <label for="obere">Obere Rücken</label>
+      </li>
+      <li>
+        <input type="radio" name="rucken" value="ischias" id="radio-4">
+        <label for="ischias">Ischiasschmerzen</label>
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <input type="checkbox" name="armHande" id="armHande" value="armHande">
+    <label for="nacken">Arme und Hände</label>
+
+    <ul>
+      <li>
+        <input type="radio" name="armHande" value="handgelenke" id="radio-1" checked>
+        <label for="handgelenke">Handgelenke</label>
+      </li>
+      <li>
+        <input type="radio" name="armHande"  value="vorderarm" id="radio-2">
+        <label for="vorderarm">Vorderarm </label>
+      </li>
+      <li>
+        <input type="radio" name="armHande" value="tennisarm" id="radio-3">
+        <label for="tennisarm">Tennisarm</label>
+      </li>
+      <li>
+        <input type="radio" name="armHande" value="finger" id="radio-4">
+        <label for="finger">Finger</label>
+      </li>
+    </ul>
+  </li>
+  
+  <div id="radioBox">
+ <label for="kreislauf">Hatten Sie schon einmal Kreislaufprobleme?</label>
+ 
+ <label><input type="radio" name="kreislauf" value="yes"  onclick="javascript:yesnoCheck(this);" id="jaCheckKreislauf"> Ja
+   <input class="noDisplay" id="kreislauf" type="text" placeholder="wenn Ja, welche"></label>
+  
+<label><input type="radio" id="neinCheckKreislauf"  name="kreislauf" value="no"  onclick="javascript:yesnoCheck(this);"> Nein</label>
+ 
+    <label for="allergien">Leiden Sie an Allergien oder Ausschlägen?</label>
+  
+<label><input type="radio" id="ja" name="allergien" value="yes" onclick="javascript:yesnoCheck(this);"> Ja
+    <input class="noDisplay"  id="allergien" type="text" placeholder="wenn Ja, welche"></label>
+    
+  <label><input type="radio" id="nein"  name="allergien" value="no" onclick="javascript:yesnoCheck(this);"> Nein</label>
+ 
+  </div>
+  
+</fieldset>
+
+<fieldset id="wohlfuhlen">
+  <legend>Fragen zum Wohlfühlen</legend>
+
+  <label class="wohlfuhlen">Handelt es sich um Ihre erste Massage?</label>
+  <input type="radio" id="ja" name="erste_massage" value="erste_massageJa"><label>Ja</label>
+ <input type="radio" id="nein" name="erste_massage" value="erste_massageNein"><label>Nein</label>
+
+    <label class="wohlfuhlen" for="aroma">Welches sind Ihre Lieblings-Aromatherapieöle?</label>
+  <input type="checkbox" name="aroma" value="lavendel" id="lavendel">
+  <label for="lavendel">Lavendel</label>
+  <input type="checkbox" name="aroma" value="orange" id="orange">
+  <label for="orange">Orange</label>
+  <input type="checkbox" name="aroma" value="zitronrngras" id="zitronrngras">
+  <label for="zitronrngras">Zitronengras</label>
+  <input type="checkbox" name="aroma" value="bergamot" id="bergamot">
+  <label for="bergamot">Bergamot</label>
+  <input type="checkbox" name="aroma" value="eucalyptus" id="eucalyptus">
+  <label for="eucalyptus">Eucalyptus</label>
+  <input type="checkbox" name="aroma" value="jasmin" id="jasmin">
+  <label for="jasmin">Jasmin</label>
+
+  <label class="wohlfuhlen" for="musik">Was ist deine Lieblingsmusik?</label>
+  <input type="checkbox" value="chill" name="musik" id="chill">
+  <label for="chill">Chill out music</label>
+  <input type="checkbox" value="piano" name="musik" id="piano">
+  <label for="piano">Piano</label>
+  <input type="checkbox" value="soul" name="musik" id="soul">
+  <label for="soul">Soul</label>
+  <input type="checkbox" value="naturgerausche" name="musik" id="naturgerausche">
+  <label for="naturgerausche">Naturgeräusche</label>
+  <input type="checkbox" value="vogelgesang" name="musik" id="vogelgesang">
+  <label for="vogelgesang">Vogelgesang</label>
+  <input type="checkbox" value="meresrauschen" name="musik" id="meeresrauschen ">
+  <label for="meeresrauschen">Meeresrauschen</label>
+</fieldset>
+
+    <label for="anliegen">
+Was möchten Sie mit Ihrem Termin erreichen? Z.B. Entspannung oder besondere Anliegen</label><textarea></textarea>
+
+<fieldset name="clubfields" disabled>
+		<legend>
+			<label><input type="checkbox" name="club" onchange="form.clubfields.disabled = !checked"> Klubkarte </label>
+		</legend> 
+		<p><label>Name auf der Karte:  <input name="clubname" required></label></p>
+		<fieldset name="numfields" disabled>
+			<legend> 
+				<label> 
+					<input type="radio" name="clubtype" onchange="form.numfields.disabled = !checked">
+					Karte zeigt Ziffern </label>
+			</legend> 
+			<p><label>Kartennummer: <input name="clubnum" required pattern="[-0-9]+"></label></p>
+		</fieldset>
+		<fieldset name="letfields" disabled>
+			<legend> 
+				<label> 
+					<input type="radio" name="clubtype" onchange="form.letfields.disabled = !checked">
+					Karte zeigt Buchstaben </label>
+			</legend> 
+			<p><label>Code der Karte: <input name="clublet" required pattern="[A-Za-z]+"></label></p>
+		</fieldset>
+	</fieldset>
+
+
+
+    <button id="submit">Submit</button>
+
+</form>

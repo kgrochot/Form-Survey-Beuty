@@ -1,0 +1,96 @@
+
+* { box-sizing: border-box; }
+
+html { height: 100%; }
+
+form {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem 0;
+  z-index: 1;
+}
+
+fieldset {
+  margin: 0 0 1rem 0;
+  padding: 0.8rem;
+   display: flex;
+   flex-direction: column;
+  border: solid #eb8a36 1px;
+}
+
+legend {
+  padding:20px;
+  text-align:center;
+  color: #eb8a36;
+  
+}
+
+ul, li {
+  list-style: none;
+}
+#survey-form > * {
+  font: 1.4em 'Unkempt', sans-serif; 
+}
+
+#survey-form {
+  display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1.1em;
+    background: beige;
+    padding: 1.2em;
+}
+
+.noDisplay{
+  display: none;
+}
+
+#massage-art {
+   display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+   padding: 0.1em;
+  border: solid pink 1px;
+}
+
+#radioBox{
+   display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+   padding: 0.1em;
+  border: solid pink 1px;
+}
+
+#wohlfuhlen {
+  display: grid;
+  grid-template-columns: 1fr 1em 2fr;
+  grid-gap: 0.2em 0.6em;
+  border: solid pink 1px;
+}
+
+.wohlfuhlen {
+  grid-column: 1/2;
+  border: solid pink 1px;
+}
+ 
+input[type="checkbox"],
+input[type="radio"] {
+  grid-column: 2/3;
+  border: solid blue 1px;
+}
+
+input[type="text"], input[type="email"],input[type="number"]{
+    padding: 10px 12px;
+    margin: 8px 5px;
+    box-sizing: border-box;  
+    font: 0.8em 'Unkempt', sans-serif; 
+  
+}
+
+#wohlfuhlen < label {
+  grid-column: 3/4;
+  border: solid green 1px;
+}
